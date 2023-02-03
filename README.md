@@ -8,7 +8,7 @@ Marketplace listings.
 _____________________________________________
 
 Use an extension which can execute userscripts (F.e. [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) for [Chrome](https://www.google.com/chrome/) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)  for [Firefox](https://www.mozilla.org/firefox))
-and then install using this link: [bptf-listing-reconcile.user.js](https://github.com/joekiller/bptf-listing-reconcile/raw/main/bptf-listings-reconcile.user.js).
+and then install using this link: [bptf-listing-reconcile.user.js](https://github.com/joekiller/bptf-listing-reconcile/raw/main/bptf-listing-reconcile.user.js).
 
 (Or paste / install it manually for your plugin)
 
