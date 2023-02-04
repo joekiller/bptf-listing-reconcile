@@ -37,6 +37,10 @@ Example of "Test", "Fix", and "Reset" buttons.
 
 _____________________________________________
 
+#### 0.3
+
+* Ensure only Sell Orders are evaluated.
+
 #### 0.2
 
 * Fix loading asset ids on page change

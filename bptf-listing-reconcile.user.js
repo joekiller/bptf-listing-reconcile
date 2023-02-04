@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         bptf-listing-reconcile
 // @namespace    https://github.com/joekiller
-// @version      0.2
+// @version      0.3
 // @description  fixes all those broke ass listings
 // @author       joekiller
 // @match        https://backpack.tf/classifieds?*
-// @include      /^https?://backpack\.tf/classifieds*steamid=*/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=backpack.tf
 // @downloadURL  https://github.com/joekiller/bptf-listing-reconcile/raw/main/bptf-listing-reconcile.user.js
 // @updateURL    https://github.com/joekiller/bptf-listing-reconcile/raw/main/bptf-listing-reconcile.meta.js
@@ -33,7 +32,14 @@ function reset() {
 function fixAssets() {
     let candidates = [];
     if(candidates.length === 0) {
-        const rows = document.getElementsByClassName("listing");
+        let panel = document.evaluate(
+            '//div[contains(@class, "panel-main") and descendant::span[text() = "Sell Orders"]]',
+            document,
+            null,
+            XPathResult.FIRST_ORDERED_NODE_TYPE,
+            null
+        ).singleNodeValue
+        const rows = panel.getElementsByClassName("listing");
         for (let i = 0; i < rows.length; i++) {
             let listing = rows[i];
             if(listing.getElementsByClassName('item')[0].getAttribute('data-market_p') != -1) {
