@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         bptf-listing-reconcile
 // @namespace    https://github.com/joekiller
-// @version      0.3
+// @version      0.4
 // @description  fixes all those broke ass listings
 // @author       joekiller
 // @match        https://backpack.tf/classifieds?*

@@ -37,6 +37,10 @@ Example of "Test", "Fix", and "Reset" buttons.
 
 _____________________________________________
 
+#### 0.4
+
+* Do not match listings with a dollar ($) sign in the price.
+
 #### 0.3
 
 * Ensure only Sell Orders are evaluated.

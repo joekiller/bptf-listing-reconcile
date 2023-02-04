@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         bptf-listing-reconcile
 // @namespace    https://github.com/joekiller
-// @version      0.3
+// @version      0.4
 // @description  fixes all those broke ass listings
 // @author       joekiller
 // @match        https://backpack.tf/classifieds?*
@@ -42,7 +42,7 @@ function fixAssets() {
         const rows = panel.getElementsByClassName("listing");
         for (let i = 0; i < rows.length; i++) {
             let listing = rows[i];
-            if(listing.getElementsByClassName('item')[0].getAttribute('data-market_p') != -1) {
+            if(listing.getElementsByClassName("tag bottom-right")[0].getElementsByTagName("span")[0].textContent.includes('$')) {
                 continue;
             }
             let listingId = listing.id.split('_')[1]
