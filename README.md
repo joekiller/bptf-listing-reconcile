@@ -31,11 +31,15 @@ Example of initial buttons:
 Example of "Test", "Fix", and "Reset" buttons.
 ![img_1.png](img_1.png)
 
-[![Example of program running](https://img.youtube.com/vi/jquiJ9GWcQI/0.jpg)](https://www.youtube.com/watch?v=jquiJ9GWcQI)
+[![Example of program running](https://img.youtube.com/vi/k4pzEoDv3ME/0.jpg)](https://www.youtube.com/watch?v=k4pzEoDv3ME)
 
 ## Changelog
 
 _____________________________________________
+
+#### 0.2
+
+* Fix loading asset ids on page change
 
 #### 0.1
 
